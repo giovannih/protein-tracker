@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
                 HelpActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
+            finish()
         })
     }
 }
