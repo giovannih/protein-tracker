@@ -14,9 +14,33 @@
         android:theme="@style/Theme.ProjectOne"
         tools:targetApi="31">
         <activity
+            android:name=".SampleListView"
+            android:exported="false" />
+        <activity
+            android:name=".SampleList"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProteinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConstraintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestLinearActivity"
+            android:exported="false" />
+        <activity
             android:name=".HelpActivity"
             android:exported="true"
-            android:label="Help Activity"/>
+            android:label="Help Activity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

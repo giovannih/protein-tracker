@@ -13,6 +13,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnInputNama : Button
     lateinit var edInputNama : EditText
     lateinit var btnHelp : Button
+    lateinit var btnLinear : Button
+    lateinit var btnConstraint : Button
+    lateinit var btnTable : Button
+    lateinit var btnProtein : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         tvMain.text = getString(R.string.text_progmob_main)
         btnInputNama = findViewById(R.id.btn_ambil_nama)
         btnHelp = findViewById(R.id.btn_help)
+        btnLinear = findViewById(R.id.btn_linear)
+        btnConstraint = findViewById(R.id.btn_constraint)
+        btnTable = findViewById(R.id.btn_table)
+        btnProtein = findViewById(R.id.btn_protein)
 
         edInputNama = findViewById(R.id.ed_input_nama)
         btnInputNama.setOnClickListener(View.OnClickListener {
@@ -38,5 +46,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         })
+        btnLinear.setOnClickListener(View.OnClickListener { view ->
+            setContentView(R.layout.test_linear)
+
+        })
+        btnConstraint.setOnClickListener(View.OnClickListener { view ->
+            setContentView(R.layout.activity_constraint)
+
+        })
+        btnTable.setOnClickListener(View.OnClickListener { view ->
+            setContentView(R.layout.activity_table)
+
+        })
+
+        btnProtein.setOnClickListener(View.OnClickListener { view ->
+            setContentView(R.layout.activity_protein)
+
+        })
+
     }
 }

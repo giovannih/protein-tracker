@@ -4,8 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Gio/ProjectOne/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/drawable/ic_baseline_profile_24.xml" value="0.13" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/drawable/ic_launcher_background.xml" value="0.326" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.326" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_constraint.xml" value="0.1" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_duta_tani.xml" value="0.11018518518518519" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_help.xml" value="0.22" />
-        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_list.xml" value="0.29981884057971014" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_protein.xml" value="0.33" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_sample_list.xml" value="0.29981884057971014" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_sample_list_view.xml" value="0.29981884057971014" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_table.xml" value="0.2427536231884058" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/fragment_home.xml" value="0.67" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/fragment_profile.xml" value="0.18541666666666667" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/test_linear.xml" value="0.18541666666666667" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18541666666666667" />
       </map>
     </option>
   </component>
