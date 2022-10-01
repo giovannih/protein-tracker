@@ -13,8 +13,10 @@ class SampleList : AppCompatActivity() {
 
         btnList = findViewById(R.id.btnShowList)
 
-        btnList.setOnClickListener(View.OnClickListener { view ->
-            setContentView(R.layout.activity_sample_list_view)
-        })
+        btnList.setOnClickListener(
+            View.OnClickListener { view ->
+                setContentView(R.layout.activity_sample_list_view)
+            }
+        )
     }
 }

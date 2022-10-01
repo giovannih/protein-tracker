@@ -20,11 +20,7 @@ class SampleListView : AppCompatActivity() {
         setContentView(R.layout.activity_sample_list_view)
         lvSample = findViewById(R.id.lvSample)
         lvSample.adapter = ArrayAdapter(this,
-            android.R.layout.simple_list_item_1, items )
-        lvSample.setOnItemClickListener { parent, view, i, l ->
-            Snackbar.make(view,"Anda memilih: ${items[i]}",
-                Snackbar.LENGTH_LONG).show()
-        }
+            android.R.layout.simple_list_item_1,items)
     }
 
 }
