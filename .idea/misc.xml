@@ -12,6 +12,7 @@
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_help.xml" value="0.22" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_list.xml" value="0.29981884057971014" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_menu_edit.xml" value="0.271875" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_protein.xml" value="0.33" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_sample_list.xml" value="0.29981884057971014" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/activity_sample_list_view.xml" value="0.29981884057971014" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/fragment_profile.xml" value="0.18541666666666667" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/layout/test_linear.xml" value="0.18541666666666667" />
         <entry key="..\:/Gio/ProteinTracker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18541666666666667" />
+        <entry key="..\:/Gio/ProteinTracker/app/src/main/res/menu/menu_sample_list_view.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -1,5 +1,6 @@
 package com.example.projectone
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,7 +16,8 @@ class SampleList : AppCompatActivity() {
 
         btnList.setOnClickListener(
             View.OnClickListener { view ->
-                setContentView(R.layout.activity_sample_list_view)
+                var intent = Intent(this@SampleList, SampleListView::class.java)
+                startActivity(intent)
             }
         )
     }
