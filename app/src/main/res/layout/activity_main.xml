@@ -47,14 +47,10 @@
         android:id="@+id/btn_help"
         android:layout_width="113dp"
         android:layout_height="44dp"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginEnd="87dp"
         android:text="Help"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_ambil_nama" />
 
     <Button
@@ -93,18 +89,13 @@
         android:id="@+id/btn_constraint"
         android:layout_width="108dp"
         android:layout_height="45dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="87dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
         android:autoText="false"
         android:text="constraint"
         android:textSize="10.5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_help" />
+        app:layout_constraintStart_toEndOf="@+id/btn_linear"
+        app:layout_constraintTop_toBottomOf="@+id/btnSampleRV" />
 
     <Button
         android:id="@+id/btn_protein"
@@ -117,6 +108,28 @@
         android:text="Protein"
         app:layout_constraintBottom_toTopOf="@+id/btn_ambil_nama"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_input_nama" />
+
+    <Button
+        android:id="@+id/btnSampleRV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Recycler V"
+        app:layout_constraintEnd_toStartOf="@+id/btn_help"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ambil_nama" />
+
+    <Button
+        android:id="@+id/btnCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginBottom="25dp"
+        android:text="Card V"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ambil_nama"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_input_nama" />
 
