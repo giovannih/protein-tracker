@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnConstraint : Button
     lateinit var btnTable : Button
     lateinit var btnProtein : Button
+    lateinit var btnRecycle : Button
+    lateinit var btnCard : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,11 +32,23 @@ class MainActivity : AppCompatActivity() {
         btnConstraint = findViewById(R.id.btn_constraint)
         btnTable = findViewById(R.id.btn_table)
         btnProtein = findViewById(R.id.btn_protein)
+        btnRecycle = findViewById(R.id.btnSampleRV)
+        btnCard = findViewById(R.id.btnCardView)
 
         edInputNama = findViewById(R.id.ed_input_nama)
         btnInputNama.setOnClickListener(View.OnClickListener {
                 view -> var strTmp = edInputNama.text.toString()
             tvMain.text = strTmp
+        })
+        btnRecycle.setOnClickListener(View.OnClickListener { view ->
+            val intent = Intent(this@MainActivity,SampleRecyclerView::class.java)
+            startActivity(intent)
+            finish()
+        })
+        btnCard.setOnClickListener(View.OnClickListener { view ->
+            val intent = Intent(this@MainActivity,SampleCardView::class.java)
+            startActivity(intent)
+            finish()
         })
         btnHelp.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
