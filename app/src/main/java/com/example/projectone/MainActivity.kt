@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnProtein : Button
     lateinit var btnRecycle : Button
     lateinit var btnCard : Button
+    lateinit var btnAPI : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         btnProtein = findViewById(R.id.btn_protein)
         btnRecycle = findViewById(R.id.btnSampleRV)
         btnCard = findViewById(R.id.btnCardView)
+        btnAPI = findViewById(R.id.btnGetAPI)
 
         edInputNama = findViewById(R.id.ed_input_nama)
         btnInputNama.setOnClickListener(View.OnClickListener {
@@ -50,6 +52,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         })
+        btnAPI.setOnClickListener(View.OnClickListener { view ->
+            val bundle = Bundle()
+            val intent = Intent(this@MainActivity,GetAPIActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
+            finish()
+        })
+
         btnHelp.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var strTmp = edInputNama.text.toString()
