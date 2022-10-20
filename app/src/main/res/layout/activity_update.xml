@@ -84,7 +84,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="111dp"
-        android:text="Insert"
+        android:text="Update"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNimProgmob" />
 
@@ -97,4 +97,16 @@
         android:text="View Data"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPost" />
+
+    <EditText
+        android:id="@+id/editNimCari"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="NIM Cari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNimProgmob" />
 </androidx.constraintlayout.widget.ConstraintLayout>

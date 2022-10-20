@@ -1,16 +1,12 @@
 package com.example.projectone.network
 
-import com.example.projectone.models.ResponseAddMhs
-import com.example.projectone.models.ResponseAddMhsItem
-import com.example.projectone.models.ResponseUsersItem
+import com.example.projectone.models.*
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.http.*
 
 class NetworkConfig {
     // set interceptor
@@ -34,7 +30,16 @@ class NetworkConfig {
 interface Users {
     @GET("users")
     fun getUsers(): Call<List<ResponseUsersItem>>
+
+    @GET("api/progmob/mhs/010101")
+    fun getMahasiswa(): Call<List<ResponseMhsItem>>
+
     @POST("api/progmob/mhs/create")
     fun addMahasiswa(@Body req : ResponseAddMhsItem): Call<ResponseAddMhs>
 
+    @PUT("api/progmob/mhs/update")
+    fun updateMahasiswa(@Body req : ResponseMhsUpdateItem): Call<ResponseMhsUpdate>
+
+    @DELETE("api/progmob/mhs/delete/010101")
+    fun deleteMahasiswa(@Body req: ResponseMhsDeleteItem): Call<ResponseMhsDelete>
 }

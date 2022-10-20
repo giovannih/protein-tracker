@@ -45,10 +45,10 @@ class SampleListView : AppCompatActivity() {
     override fun onContextItemSelected(item: MenuItem): Boolean {
         var info = item.menuInfo as AdapterView.AdapterContextMenuInfo
         when(item.itemId){
-            R.id.menu_add -> {
-                Snackbar.make(lvSample,"Anda memilih: Add Item ke-," +
-                        "${info.id}", Snackbar.LENGTH_LONG).show()
-            }
+//            R.id.menu_add -> {
+//                Snackbar.make(lvSample,"Anda memilih: Add Item ke-," +
+//                        "${info.id}", Snackbar.LENGTH_LONG).show()
+//            }
             R.id.menu_edit -> {
                 val intent = Intent(this@SampleListView,MenuEditActivity::class.java)
                 intent.putExtra("username",items.get(info.id.toInt()))

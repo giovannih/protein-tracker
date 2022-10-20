@@ -28,6 +28,9 @@
             android:name=".GetAPIActivity"
             android:exported="false" />
         <activity
+            android:name=".GetAPIMhs"
+            android:exported="false" />
+        <activity
             android:name=".SampleCardView"
             android:exported="false" />
         <activity
